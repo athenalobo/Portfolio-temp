@@ -1,59 +1,83 @@
 import React from 'react';
 import './AboutPage.css';
+import { FaBriefcase, FaGraduationCap, FaProjectDiagram, FaAward, FaBook, FaHeart } from 'react-icons/fa';
 
 const AboutPage = () => {
-  return (
+    return (
     <div className="about-container">
-      <h1 className="about-title">About Me</h1>
+      <h1 className="about-title">My Journey</h1>
       <p className="about-intro">
-        Motivated software engineer passionate about innovation and impactful work. <br />
-        Currently enjoying a challenging role, with a proven record of delivering high-quality solutions at CAST Software and collaborating with talented teams.
+        Welcome to a snapshot of my professional and educational milestones, where I navigated from a tech enthusiast to a software professional passionate about delivering impactful solutions.
       </p>
 
-      <div className="timeline">
-        <div className="timeline-item">
-          <h2>Jan 2023 - Present</h2>
-          <h3>Junior Software Engineer, CAST Software</h3>
-          <p>
-            Working on front-end and full-stack development roles, focused on cloud solutions and Agile processes.
-          </p>
-          <ul>
-            <li>Contributed to cloud migration, enhancing scalability</li>
-            <li>Appointed Scrum Master for CAST Profiler and Imaging on Cloud teams</li>
-          </ul>
-        </div>
-
-        <div className="timeline-item">
-          <h2>2022 - 2023</h2>
-          <h3>Machine Learning Intern, MSR University of Applied Sciences</h3>
-          <p>
-            Built machine learning models on Carnatic and Hindustani music for genre classification and analysis.
-          </p>
-          <ul>
-            <li>Developed Hidden Markov models and genre classifiers using Python</li>
-          </ul>
-        </div>
-
-        <div className="timeline-item">
-          <h2>2021 - 2022</h2>
-          <h3>Full-Stack Web Developer, Boond Project</h3>
-          <p>
-            Designed dynamic front-end applications and back-end functionality for social impact projects.
-          </p>
-          <ul>
-            <li>Built front-end with HTML, CSS, JavaScript, and Bootstrap</li>
-            <li>Back-end with PHP and SQL database</li>
-          </ul>
-        </div>
+      <div className="roadmap">
         
-        <div className="timeline-item">
-          <h2>Education</h2>
-          <h3>M.S. Ramaiah Institute of Technology</h3>
-          <p>Bachelor of Engineering in Information Science (CGPA: 8.88)</p>
-          <ul>
-            <li>Relevant Courses: Object-Oriented Programming, Data Structures, Machine Learning</li>
-          </ul>
-        </div>
+        <section className="roadmap-section experience-section">
+          <div className="roadmap-icon"><FaBriefcase /></div>
+          <h2 className="roadmap-section-title">Professional Experience</h2>
+          <div className="roadmap-item">
+            <p><strong>2023 - Present</strong> Junior Software Engineer<br />CAST Software, Bengaluru, India</p>
+            <p>Led UI and CLI development, focusing on cloud scalability for CAST Imaging. Promoted agile workflows and team collaboration across international teams.</p>
+          </div>
+          <div className="roadmap-item">
+            <p><strong>2022 - 2023</strong> Machine Learning Intern<br />MSR University</p>
+            <p>Developed genre classification models for Indian classical music using machine learning, enhancing cultural data recognition.</p>
+          </div>
+          <div className="roadmap-item">
+            <p><strong>2021 - 2022</strong> Full-Stack Developer<br />Boond Project</p>
+            <p>Contributed to social impact projects through front-end and back-end development, enhancing accessibility and user engagement.</p>
+          </div>
+        </section>
+
+        <section className="roadmap-section">
+          <div className="roadmap-icon"><FaGraduationCap /></div>
+          <h2 className="roadmap-section-title">Education</h2>
+          <div className="roadmap-item">
+            <p><strong>M.S. Ramaiah Institute of Technology</strong><br />B.E. in Information Science, CGPA: 8.88/10</p>
+          </div>
+          <div className="roadmap-item">
+            <p><strong>Sophia High School</strong> - ISC & ICSE<br />Class XII: 94.4% | Math: 100%</p>
+          </div>
+        </section>
+
+        <section className="roadmap-section">
+          <div className="roadmap-icon"><FaProjectDiagram /></div>
+          <h2 className="roadmap-section-title">Projects</h2>
+          <div className="roadmap-item">
+            <p>Developed an interactive coding game in C# and Unity, designed to teach basic programming principles such as conditionals and loops.</p>
+          </div>
+        </section>
+
+        <section className="roadmap-section">
+          <div className="roadmap-icon"><FaAward /></div>
+          <h2 className="roadmap-section-title">Honors & Awards</h2>
+          <div className="roadmap-item">
+            <p>🏆 Runners-up - Smart India Hackathon 2023</p>
+            <p>🎖️ Toycathon 2020 Finalist</p>
+          </div>
+        </section>
+
+        <section className="roadmap-section">
+          <div className="roadmap-icon"><FaBook /></div>
+          <h2 className="roadmap-section-title">Publications</h2>
+          <div className="roadmap-item">
+            <p>“Meta Heuristic Technique with Reinforcement Learning for Node Deployment in Wireless Sensor Networks” - Springer, 2024</p>
+            <a 
+              href="https://link.springer.com/article/10.1007/s42979-024-02906-1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="publication-link"
+            >
+              View Article
+            </a>
+          </div>
+        </section>
+
+        <section className="roadmap-section">
+          <div className="roadmap-icon"><FaHeart /></div>
+          <h2 className="roadmap-section-title">Interests</h2>
+          <p>Travel • Self-Improvement • Nutrition • Chess • Cricket</p>
+        </section>
       </div>
     </div>
   );

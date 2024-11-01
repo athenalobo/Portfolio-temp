@@ -1,11 +1,7 @@
 :root {
     --primary-color: #003366;
-    --secondary-color: #ffffff;
-    --light-gray: #f5f5f5;
-    --text-color: #333;
-    --timeline-border-color: #c4d4e3;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    --secondary-color: #f5f8fa;
+    --track-color: #ccd5de;
 }
 
 * {
@@ -15,96 +11,145 @@
 }
 
 .about-container {
-    padding-top: 40px;
+    padding: 40px;
     background-color: var(--secondary-color);
     color: var(--primary-color);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 1100px;
 }
 
 .about-title {
-    font-size: 2.5em;
-    font-weight: bold;
-    margin-bottom: 10px;
+    font-size: 3em;
     color: var(--primary-color);
     text-align: center;
+    margin-bottom: 20px;
+    animation: fadeInDown 1s ease-in-out forwards;
 }
 
 .about-intro {
-    font-size: 1.09em;
+    font-size: 1.2em;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     color: var(--primary-color);
-    max-width: 600px;
+    max-width: 700px;
+    line-height: 1.5;
+    animation: fadeIn 1s ease-out;
 }
 
-.timeline {
+.roadmap {
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    max-width: 800px;
+    gap: 40px;
     width: 100%;
-    margin-top: 20px;
-}
-
-.timeline-item {
-    background-color: var(--light-gray);
-    border-left: 5px solid var(--primary-color);
-    padding: 20px 30px;
-    border-radius: 8px;
+    max-width: 800px;
     position: relative;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
 }
 
-.timeline-item h2 {
-    font-size: 1.5em;
-    margin-bottom: 5px;
-}
+.roadmap::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 8px;
+    height: 100%;
+    background: var(--track-color);
+    border-radius: 4px;
+    transform: translateX(-50%);
+    }
 
-.timeline-item h3 {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-    color: var(--text-color);
-}
-
-.timeline-item p {
-    font-size: 1em;
-    line-height: 1.6;
-    color: var(--text-color);
-}
-
-.timeline-item ul {
-    list-style-type: disc;
-    padding-left: 20px;
+.roadmap-icon {
+    font-size: 2em;
     color: var(--primary-color);
+    margin-bottom: 8px;
+    transition: transform 0.2s ease;
 }
 
-.timeline-item ul li {
-    margin-bottom: 5px;
+.roadmap-icon:hover {
+    transform: scale(1.05);
 }
 
-.timeline-item:hover {
-    transform: scale(1.02);
-    border-left-color: var(--primary-color);
+.roadmap-section-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--primary-color);
+    text-align: center;
+    margin: 5px 0;
 }
 
-@media (max-width: 768px) {
-    .about-container {
-        padding: 20px;
+.roadmap-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 0.8s ease-out forwards;
+    opacity: 0;
+}
+
+.roadmap-item {
+    font-size: 1em;
+    color: var(--primary-color);
+    line-height: 1.4;
+    text-align: center;
+}
+
+.experience-section .roadmap-item {
+    text-align: left;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
     }
 
-    .about-title {
-        font-size: 2em;
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
     }
 
-    .about-intro {
-        font-size: 1em;
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
     }
 
-    .timeline-item {
-        padding: 15px 20px;
+    to {
+        opacity: 1;
     }
+}
+
+.publication-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.publication-link:hover {
+    background-color: #001f4d;
 }
