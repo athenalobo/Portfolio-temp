@@ -5,10 +5,10 @@ import { FaBriefcase, FaGraduationCap, FaProjectDiagram, FaAward, FaBook, FaHear
 const AboutPage = () => {
     return (
     <div className="about-container">
-      <h1 className="about-title">My Journey</h1>
+      <h1 className="about-title">About Me</h1>
       <p className="about-intro">
-        Welcome to a snapshot of my professional and educational milestones, where I navigated from a tech enthusiast to a software professional passionate about delivering impactful solutions.
-      </p>
+        Motivated software engineer with a solid foundation in front-end and full-stack development, currently enjoying a challenging role at CAST Software. Skilled in delivering high-quality solutions and driven by a passion for innovation.
+        </p>
 
       <div className="roadmap">
         

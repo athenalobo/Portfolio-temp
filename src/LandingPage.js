@@ -23,7 +23,7 @@ function LandingPage() {
           onClick={() => setShowModal(true)}
         />
         <h1 className="name">Athena Marianne Lobo</h1>
-        <p className="tagline">Software Engineer | Scrum Master | Lifelong Learner</p>
+        <p className="tagline">Software Engineer | Scrum Master | Enthusiastic Learner</p>
 
         <div className="action-buttons">
           {/* <button className="cta-button">Download Resume</button> */}
