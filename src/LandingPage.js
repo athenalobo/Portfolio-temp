@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import './LandingPage.css';
 import profilePic from './profile-pic.png';
 import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
-import AboutPage from './AboutPage';
 import { useNavigate } from 'react-router-dom';
 
 function LandingPage() {
@@ -54,7 +53,7 @@ function LandingPage() {
           <h2>About</h2>
           <p>Get to know me and my journey in tech!</p>
         </div>
-        <div className="grid-item">
+        {/* <div className="grid-item">
           <h2>Experience</h2>
           <p>Highlights from my career at CAST Software and beyond.</p>
         </div>
@@ -65,7 +64,7 @@ function LandingPage() {
         <div className="grid-item">
           <h2>Skills</h2>
           <p>Technologies and tools I enjoy working on, including JavaScript, Java, Python, and more.</p>
-        </div>
+        </div> */}
       </div>
     </div>
   );

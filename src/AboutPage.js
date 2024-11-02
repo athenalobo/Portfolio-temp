@@ -6,9 +6,9 @@ const AboutPage = () => {
     return (
     <div className="about-container">
       <h1 className="about-title">About Me</h1>
-      <p className="about-intro">
+      <p className="about-intro-block">
         Motivated software engineer with a solid foundation in front-end and full-stack development, currently enjoying a challenging role at CAST Software. Skilled in delivering high-quality solutions and driven by a passion for innovation.
-        </p>
+      </p>
 
       <div className="roadmap">
         
